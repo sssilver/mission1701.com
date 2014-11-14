@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "AlienLeague";
+    src: url("alienleague.woff") format("woff");
+}
+
+
+body {
+    max-width: 60em;
+    margin: 0;
+    font-family: "Lora", serif;
+}
+
+header {
+    margin-bottom: 6em;
+}
+
+header h1 {
+    font-family: "AlienLeague";
+}
+
+footer {
+    margin-top: 6em;
+}
+
+#page {
+    margin: 6em;
+    padding: 20px;
+    max-width: 34em;
+}

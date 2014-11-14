@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+    
+    <meta name="description" content="Rocket in the Sky">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="{{SITEURL}}/css/typeplate.css" rel="stylesheet" media="all">
+    <link href="{{SITEURL}}/css/site.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <div id="page">
+        <header role="banner">
+            {% block header %}
+                {% include 'header.html' %}
+            {% endblock %}
+        </header>
+    
+        <main role="main">
+            <article class="width4" id="main-content">
+                <section class="width2">
+                    {% block content %}{% endblock %}
+                </section>
+            </article>
+        </main>
+            
+        <footer role="contentinfo">
+            {% block footer %}
+                {% include 'footer.html' %}
+            {% endblock %}
+        </footer>
+    </div>
+</body>
+</html>
